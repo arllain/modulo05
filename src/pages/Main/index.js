@@ -1,5 +1,10 @@
 import React from 'react';
+import { Title } from './styles';
 
 export default function Main() {
-  return <h1>Main</h1>;
+  return (
+    <Title error={false}>
+      Main <small>texto menor</small>
+    </Title>
+  );
 }
