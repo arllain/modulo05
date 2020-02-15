@@ -5,7 +5,7 @@ import api from '../../services/api';
 
 export default class Main extends Component {
   state = {
-    newRepo: 'arllain/fastfeet-api ',
+    newRepo: ' ',
     repositories: [],
     loading: false,
   };
@@ -29,7 +29,7 @@ export default class Main extends Component {
 
     this.setState({
       repositories: [...repositories, data],
-      //newRepo: '',
+      newRepo: '',
       loading: false,
     });
   };
